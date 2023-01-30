@@ -11,6 +11,19 @@ const (
 	ApiSandBoxUrl = "https://api-sandbox.coingate.com/v2"
 )
 
+// https://developer.coingate.com/reference/order-statuses
+const (
+	StatusNew               = "new"
+	StatusPending           = "pending"
+	StatusConfirming        = "confirming"
+	StatusPaid              = "paid"
+	StatusInvalid           = "invalid"
+	StatusExpired           = "expired"
+	StatusCanceled          = "canceled"
+	StatusRefunded          = "refunded"
+	StatusPartiallyRefunded = "partially_refunded"
+)
+
 type (
 	Client struct {
 		AppId   int    // mecharnt app id
